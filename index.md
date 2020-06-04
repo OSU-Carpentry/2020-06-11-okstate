@@ -325,32 +325,13 @@ This is the other place where people frequently make mistakes, so
 please preview your site before committing, and make sure to run
 'tools/check' as well.
 {% endcomment %}
-
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
-  {% if site.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif site.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif site.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
-  you will need access to the software described below.
-  In addition, you will need an up-to-date web browser.
+  We will use <a href="https://notebooks.azure.com/">Azure notebooks</a> for this workshop.
+  <ol>
+    <li>Go to the <a href="https://notebooks.azure.com/">Azure notebooks</a> website.</li>
+    <li>Azure notebooks require a Microsoft account. If you use OSU's instance of Outlook, you can log in with your OSU email and OKEY password. If you do not have an OSU Microsoft Exchange account, click "Sign In" in the upper-righthand corner and create an account when prompted.</li>
+    <li>Azure uses notebooks to store code, text, and output. We will send you a link to create a copy of the workshop notebook in your account.</li>
+    </ol>
 </p>
-<p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
-</p>
-
-{% if site.carpentry == "swc" %}
-{% include swc/setup.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/setup.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/setup.html %}
-{% endif %}
